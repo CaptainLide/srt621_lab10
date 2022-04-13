@@ -1,0 +1,9 @@
+<h2>Click on any book to see the details</h2>
+<% books.forEach(s=>
+    { %> 
+        <a href="/books/<%=s.bookNumber %>"> <p>
+            <b>Book Title:</b>
+            <%= s.name %>
+        </p></a>
+    <% });
+%>
